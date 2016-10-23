@@ -1,1 +1,2 @@
 bash ~/display_system_info.sh
+alias vim='vim -n'
