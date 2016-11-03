@@ -10,3 +10,6 @@ git clone git@github.com:mohitleoagrawal/aws_server_setup.git
 bash aws_server_setup/setup_server.sh
 ```
 
+
+* Add swap memory if 'cannot allocate memory'
+    * http://stackoverflow.com/a/26416661
