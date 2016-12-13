@@ -13,6 +13,7 @@ set colorcolumn=99
 " map leader key to ,
 let mapleader = ","
 set pastetoggle=<F2>
+" use "*y and "*p to yank and paste to system clipboard
 
 "Dein.vim
 let s:dein_dir = expand('~/.cache/dein')
