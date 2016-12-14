@@ -3,3 +3,6 @@ cp files/display_system_info.sh ~
 
 echo 'appending delta to bashrc'
 cat files/bashrc_delta >> ~/.bashrc
+
+sudo yum install git
+sudo yum install tmux
