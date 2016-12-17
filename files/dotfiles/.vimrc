@@ -44,6 +44,7 @@ imap <C-a> <Home>
 
 "Fast quit and save
 map <C-x> <Esc>:x<CR>
+" use "*y and "*p to yank and paste to system clipboard
 
 "---------- Plug-in manager config-------------
 " Dein.vim
