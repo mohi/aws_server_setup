@@ -44,7 +44,6 @@ imap <C-a> <Home>
 
 "Fast quit and save
 map <C-x> <Esc>:x<CR>
-" use "*y and "*p to yank and paste to system clipboard
 
 "---------- Plug-in manager config-------------
 " Dein.vim
@@ -64,6 +63,7 @@ call dein#add('scrooloose/nerdtree')
 call dein#add('easymotion/vim-easymotion')
 call dein#add('Shougo/neosnippet')
 call dein#add('klen/python-mode')
+call dein#add('Shougo/unite.vim')
 
 call dein#end()
 if dein#check_install()
@@ -77,6 +77,16 @@ filetype plugin indent on
 
 " plugins
 nmap <leader>nt :NERDTree<cr>
+
+" unite: plugin for quick looking up files
+nnoremap <space> <nop>
+" lookup file
+nnoremap <space>f  :Unite file<cr>
+" recursive search, slow normally, use with vimproc
+" nnoremap <space>rec  :Unite file_rec<cr>
+" quick swtiching buffers
+nnoremap <space>b :Unite -quick-match buffer<cr>
+
 
 " neosnippet
 " use NeoSnippetEdit for personal snippets
@@ -102,7 +112,8 @@ let g:pymode_lint_checker = "pyflakes,pep8"
 " Ignore following pylint error
 let g:pymode_lint_ignore = "E501"
 " Auto check on save
-let g:pymode_lint_write = 0
+let g:pymode_lint = 0
+let g:pymode_lint_on_write = 0
 
 " Support virtualenv
 let g:pymode_virtualenv = 1

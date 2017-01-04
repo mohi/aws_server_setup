@@ -1,0 +1,23 @@
+snippet barepy
+    #!/usr/bin/env python
+    # -*- coding: utf-8 -*-
+
+
+    def ${1}(${2}):
+        return 
+
+
+    if __name__ == '__main__': 
+        ${1}()
+
+# Module Docstring
+snippet docs
+    """
+    File: ${1:`vim_snippets#Filename('$1.py', 'foo.py')`}
+    Description: ${0}
+    """
+
+snippet def
+    def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
+        """${3:docstring for $1}"""
+        ${0}
