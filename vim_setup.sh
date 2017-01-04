@@ -1,3 +1,5 @@
 cp files/dotfiles/.vimrc ~/.vimrc
-mkdir ~/.vim
+if [ ! -d ~/.vim ]; then
+    mkdir ~/.vim
+fi
 cp -r files/{ftplugin,mysnippet,vim-snippets} ~/.vim/
