@@ -20,7 +20,7 @@ au BufNewFile,BufRead *.py
     \ set softtabstop=4
 
 " color limit to 99
-set colorcolumn=99
+autocmd FileType python set colorcolumn=99
 " map leader key to ,
 let mapleader = ","
 " better copy paste
