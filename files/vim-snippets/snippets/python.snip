@@ -21,3 +21,11 @@ snippet def
     def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
         """${3:docstring for $1}"""
         ${0}
+
+snippet add_path
+    import os
+    CURRENT_PATH = os.path.abspath(os.path.dirname(__file__))
+    RELATIVE_PATH = '${0}'
+    CODE_PATH = os.path.join(CURRENT_PATH, RELATIVE_PATH)
+    import sys
+    sys.path.append(CODE_PATH)
