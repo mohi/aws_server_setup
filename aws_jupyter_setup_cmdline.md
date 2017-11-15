@@ -17,6 +17,7 @@
          * Generate password by checking out the setting file
 
 ## Future work 
-     * Automating this with one command using fabric and shell scripts
+
+* Automating this with one command using fabric and shell scripts
       
               
