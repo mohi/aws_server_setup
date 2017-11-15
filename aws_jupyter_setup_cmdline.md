@@ -15,6 +15,7 @@
      * https://medium.com/@josemarcialportilla/getting-spark-python-and-jupyter-notebook-running-on-amazon-ec2-dec599e1c297
          * Install conda and edit the jupyter setting file and run
          * Generate password by checking out the setting file
+* Start using jupyter notebooks with conda libraries from browser and password
 
 ## Future work 
 
